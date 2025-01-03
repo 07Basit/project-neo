@@ -8,7 +8,7 @@ const stats = [
 
 export default function Stats() {
   return (
-    <div className="relative py-12 md:py-16">
+    <div className="relative py-8">
       <div 
         className="absolute inset-0 z-0"
         style={{
@@ -23,7 +23,7 @@ export default function Stats() {
           {stats.map((stat, index) => (
             <div 
               key={index}
-              className="bg-white rounded-lg shadow-lg p-6 md:p-8 text-center transform hover:scale-105 transition-transform duration-300"
+              className="bg-white rounded-lg shadow-lg p-6 text-center transform hover:scale-105 transition-transform duration-300"
             >
               <div className="text-3xl md:text-4xl font-bold text-green-600 mb-2">
                 {stat.number}

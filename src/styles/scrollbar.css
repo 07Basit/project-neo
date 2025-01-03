@@ -19,6 +19,19 @@
   }
 }
 
+@keyframes fast-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .animate-scroll {
   animation: scroll 30s linear infinite;
+}
+
+.animate-fast-scroll {
+  animation: fast-scroll 15s linear infinite;
 }

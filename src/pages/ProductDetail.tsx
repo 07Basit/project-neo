@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { ChevronLeft, Home } from 'lucide-react';
 import { products } from '../data/productData';
@@ -7,6 +7,9 @@ export default function ProductDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
   const product = products.find(p => p.id === id);
+  const [selectedImage, setSelectedImage] = useState('');
+
+  const allImages = product ? [product.mainImage, ...product.images] : [];
 
   if (!product) {
     return (
@@ -59,20 +62,25 @@ export default function ProductDetail() {
         <div className="space-y-4">
           <div className="bg-white rounded-lg overflow-hidden shadow-lg">
             <img 
-              src={product.mainImage} 
+              src={selectedImage || product.mainImage} 
               alt={product.name}
-              className="w-full h-96 object-cover"
+              className="w-full h-96 object-cover transition-all duration-300"
             />
           </div>
-          <div className="grid grid-cols-2 gap-4">
-            {product.images?.map((image, index) => (
-              <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md">
+          <div className="grid grid-cols-4 gap-4">
+            {allImages.map((image, index) => (
+              <button
+                key={index}
+                onClick={() => setSelectedImage(image)}
+                className={`bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all
+                  ${selectedImage === image ? 'ring-2 ring-green-500' : ''}`}
+              >
                 <img 
                   src={image} 
                   alt={`${product.name} ${index + 1}`}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-24 object-cover"
                 />
-              </div>
+              </button>
             ))}
           </div>
         </div>

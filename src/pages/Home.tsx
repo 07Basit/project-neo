@@ -7,7 +7,7 @@ import Certifications from '../components/Certifications/Certifications';
 
 export default function Home() {
   return (
-    <div className="space-y-16">
+    <div className="space-y-8">
       <HeroSlider />
       <Stats />
       <FeaturedProducts />

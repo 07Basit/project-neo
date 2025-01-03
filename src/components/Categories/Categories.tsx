@@ -1,5 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
 import CategoryCard from '../common/CategoryCard';
 import { useCategories } from '../../hooks/useCategories';
 
@@ -20,6 +21,11 @@ export default function Categories() {
           768: { slidesPerView: 3 },
           1024: { slidesPerView: 4 }
         }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]}
         className="categories-swiper"
       >
         {categories.map((category) => (
