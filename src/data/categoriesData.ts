@@ -30,5 +30,17 @@ export const categories: Category[] = [
     name: "Packed Food",
     image: "https://images.unsplash.com/photo-1621939514649-280e2ee25f60",
     description: "Carefully packaged foods maintaining freshness and quality"
+  },
+  {
+    id: 6,
+    name: "Mouth Freshners",
+    image: "https://images.unsplash.com/photo-1621939514649-280e2ee25f60",
+    description: "Carefully packaged foods maintaining freshness and quality"
+  },
+  {
+    id: 7,
+    name: "Nuts",
+    image: "https://images.unsplash.com/photo-1621939514649-280e2ee25f60",
+    description: "Carefully packaged foods maintaining freshness and quality"
   }
 ];
