@@ -24,7 +24,7 @@ export default function FeaturedProducts() {
           1024: { slidesPerView: 3 }
         }}
         autoplay={{
-          delay: 3000,
+          delay: 7000,
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}

@@ -23,5 +23,16 @@ export const categories = [
     id: 5,
     name: "Packed Food",
     image: "https://images.unsplash.com/photo-1621939514649-280e2ee25f60",
+  },
+  {
+    id: 6,
+    name: "Mouth Freshners",
+    image: "https://images.unsplash.com/photo-1621939514649-280e2ee25f60"
+    
+  },
+  {
+    id: 7,
+    name: "Nuts",
+    image: "https://images.unsplash.com/photo-1621939514649-280e2ee25f60"
   }
 ];
