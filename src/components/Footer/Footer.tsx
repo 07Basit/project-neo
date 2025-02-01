@@ -9,24 +9,31 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Farm House Section */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Farm House</h3>
+            <h3 className="text-xl font-bold mb-4">Raiyan Global</h3>
             <div className="space-y-2">
               <div className="flex items-start space-x-2">
                 <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
                 <div>
-                  <p>123 Export Avenue</p>
-                  <p>Business District</p>
-                  <p>Los Angeles, CA 90001</p>
-                  <p>United States</p>
+                  <p>E-3, Gulshan CHS</p>
+                  <p>Versova, Andheri (West)</p>
+                  <p>Mumbai: 400061, Maharashtra </p>
+                  <p>India</p>
                 </div>
               </div>
-              <div className="flex items-center space-x-2">
-                <Phone className="w-5 h-5" />
-                <p>+1 (555) 123-4567</p>
-              </div>
+              <div className="flex flex-col items-start space-y-2">
+  <div className="flex items-center space-x-2">
+    <Phone className="w-5 h-5" />
+    <p>+91 59562629</p>
+  </div>
+  <div className="flex items-center space-x-2">
+    <Phone className="w-5 h-5" />
+    <p>+91 25926255</p>
+  </div>
+</div>
+
               <div className="flex items-center space-x-2">
                 <Mail className="w-5 h-5" />
-                <p>contact@freshexports.com</p>
+                <p>sales.raiyanglobal@gmail.com</p>
               </div>
             </div>
           </div>
@@ -65,7 +72,8 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Location</h3>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.7152203584424!2d-118.2673626!3d34.0522342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1625145123456!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24069.375111599555!2d72.79424769289867!3d19.132682498781442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b60f4811515b%3A0x4756dfde731c2c8f!2sVersova%2C%20Andheri%20West%2C%20Mumbai%2C%20Maharashtra!5e1!3m2!1sen!2sin!4v1738417172330!5m2!1sen!2sin"
+              
               width="100%"
               height="200"
               style={{ border: 0 }}

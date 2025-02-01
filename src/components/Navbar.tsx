@@ -16,7 +16,7 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <Apple className="h-8 w-8 text-green-600" />
-              <span className="ml-2 text-xl font-bold text-gray-800">Farm Export</span>
+              <span className="ml-2 text-xl font-bold text-gray-800">Raiyan Global</span>
             </Link>
           </div>
 

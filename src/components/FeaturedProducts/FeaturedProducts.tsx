@@ -3,13 +3,11 @@ import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import ProductCard from '../common/ProductCard';
-import { useFeaturedProducts } from '../../hooks/useFeaturedProducts';
+import { featuredProducts } from './featuredProductsData';
 
 import 'swiper/css';
 
 export default function FeaturedProducts() {
-  const { featuredProducts } = useFeaturedProducts();
-
   return (
     <section className="max-w-7xl mx-auto px-4 py-8">
       <div className="flex justify-between items-center mb-8">
