@@ -28,9 +28,9 @@ export default function Categories() {
         modules={[Autoplay]}
         className="categories-swiper"
       >
-        {categories.map((category) => (
+        {categories.map((category, index) => (
           <SwiperSlide key={category.id}>
-            <CategoryCard category={category} />
+            <CategoryCard category={category} index={index} />
           </SwiperSlide>
         ))}
       </Swiper>

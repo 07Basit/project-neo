@@ -10,8 +10,10 @@ export default function HoverImageCarousel({ images, interval = 1000 }: HoverIma
   const [isHovering, setIsHovering] = useState(false);
 
   const nextImage = useCallback(() => {
-    setCurrentIndex((prev) => (prev + 1) % images.length);
-  }, [images.length]);
+    if (isHovering) {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }
+  }, [isHovering, images.length]);
 
   useEffect(() => {
     if (!isHovering) {

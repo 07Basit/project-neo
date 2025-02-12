@@ -7,14 +7,19 @@ export default function About() {
       {/* Hero Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
         <div>
-          <h1 className="text-4xl font-bold mb-6">About FreshExports</h1>
+          <h1 className="text-4xl font-bold mb-6">About Raiyan Global</h1>
+          
           <p className="text-gray-600 mb-4">
-            Founded in 2020, FreshExports has established itself as a leading exporter of premium fruits and vegetables. 
-            Our commitment to quality and reliability has made us a trusted partner for businesses worldwide.
+            We were established in the year 2022. We are best exporter of premium fruits and vegetables, committed to delivering fresh, high-quality produce to customers worldwide..
+          </p>
+          <p className="text-gray-600 mb-4">
+            We have Expertise in the Field of Exports buy understanding the needs of our buyers and suppliers.
+          </p>
+        <p className="text-gray-600">
+            We Ensure the Quality of product, Packaging and Trust of of valued customers for variety of products that is fulfilled by us.
           </p>
           <p className="text-gray-600">
-            We work directly with farmers to ensure the highest quality produce, implementing strict quality control 
-            measures at every step of our supply chain.
+            Our Motto is "We Believe in Quality"
           </p>
         </div>
         <div className="relative h-[400px]">
@@ -26,6 +31,8 @@ export default function About() {
         </div>
       </div>
 
+      {/* Feature Cards Section */}
+      <h2 className="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
       <FeatureGrid />
     </div>
   );

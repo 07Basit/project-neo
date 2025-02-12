@@ -58,8 +58,12 @@ export default function Products() {
       <CategoryTabs />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {paginatedProducts.map((product) => (
-          <ProductCard key={product.id} product={product} />
+        {paginatedProducts.map((product, index) => (
+          <ProductCard 
+            key={product.id} 
+            product={product} 
+            index={index + startIndex} // Add startIndex to maintain color pattern across pages
+          />
         ))}
       </div>
 

@@ -1,122 +1,97 @@
-export const featuredProducts = [
+import { Product } from '../../types/product';
+
+export const featuredProducts: Product[] = [
   {
-    id: 1,
-    name: "Premium Red Apples",
-    mainImage: "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6",
-    images: [
-      "https://images.unsplash.com/photo-1570913149827-d2ac84ab3f9a",
-      "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb",
-    ],
-    shortDescription: "Fresh and crispy apples from organic farms",
-    description: `Our premium red apples are handpicked from the finest organic orchards. These apples are known for their:
-
-• Sweet and crispy taste
-• Rich red color
-• High nutritional value
-• Perfect for both eating fresh and cooking
-
-Each apple is carefully selected to ensure the highest quality and freshness. We follow strict quality control measures throughout the harvesting and packaging process.`,
-    specifications: [
-      { label: "Origin", value: "Washington State, USA" },
-      { label: "Season", value: "September to May" },
-      { label: "Storage", value: "2-4°C" },
-      { label: "Packaging", value: "5kg, 10kg boxes" }
-    ]
-  },
-  {
-    id: 2,
-    name: "Organic Tomatoes",
-    mainImage: "https://images.unsplash.com/photo-1546094096-0df4bcaaa337",
-    images: [
-      "https://images.unsplash.com/photo-1582284540020-8acbe03f4924",
-      "https://images.unsplash.com/photo-1592924357228-91a4daadcfea",
-    ],
-    shortDescription: "Vine-ripened organic tomatoes",
-    description: `Our organic tomatoes are grown with care in controlled environments. These tomatoes feature:
-
-• Rich, vibrant color
-• Perfect ripeness
-• Excellent flavor profile
-• Versatile for cooking
-
-Each tomato is harvested at peak ripeness to ensure the best taste and nutritional value. We maintain strict organic farming practices throughout the growing process.`,
-    specifications: [
-      { label: "Origin", value: "California, USA" },
-      { label: "Season", value: "Year-round" },
-      { label: "Storage", value: "12-15°C" },
-      { label: "Packaging", value: "2kg, 5kg boxes" }
-    ]
-  },
-  {
-    id: 3,
-    name: "Fresh Mangoes",
+    id: "FP001",
+    name: "Premium Alphonso Mangoes",
+    category: "Fruits",
+    categoryId: 1,
     mainImage: "https://images.unsplash.com/photo-1553279768-865429fa0078",
     images: [
       "https://images.unsplash.com/photo-1601493700631-2b16ec4b4716",
       "https://images.unsplash.com/photo-1553279768-865429fa0078",
     ],
-    shortDescription: "Sweet and juicy mangoes",
-    description: `Our premium mangoes are sourced from the finest orchards. These mangoes are distinguished by:
+    shortDescription: "Sweet and juicy Alphonso mangoes",
+    description: `Our premium Alphonso mangoes are sourced from the finest orchards in Maharashtra. These mangoes are distinguished by:
 
-• Natural sweetness
+• Exceptional sweetness and aroma
+• Rich golden color
 • Perfect ripeness
-• Rich aroma
-• Smooth texture
+• Smooth, fiber-free pulp
 
-Each mango is carefully handled to prevent bruising and ensure optimal ripeness. We use advanced ripening techniques to deliver consistently excellent fruit.`,
+Each mango is carefully hand-picked and naturally ripened to ensure the best taste and quality. We follow strict quality control measures throughout the harvesting, packaging, and shipping process.
+
+The Alphonso mango, known as the 'King of Mangoes', is renowned worldwide for its superior taste and texture. Our mangoes are exported fresh and are ideal for both direct consumption and processing.`,
     specifications: [
-      { label: "Origin", value: "Mexico" },
-      { label: "Season", value: "March to July" },
+      { label: "Origin", value: "Maharashtra, India" },
+      { label: "Season", value: "March to May" },
       { label: "Storage", value: "13-15°C" },
       { label: "Packaging", value: "4kg, 8kg boxes" }
     ]
   },
   {
-    id: 4,
-    name: "Green Peppers",
-    mainImage: "https://images.unsplash.com/photo-1509377244-dd5d1e09065b",
+    id: "FP002",
+    name: "Organic Turmeric",
+    category: "Spices",
+    categoryId: 4,
+    mainImage: "https://images.unsplash.com/photo-1615485500704-8e990f9900f7",
     images: [
-      "https://images.unsplash.com/photo-1509377244-dd5d1e09065b",
-      "https://images.unsplash.com/photo-1601493700631-2b16ec4b4716",
+      "https://images.unsplash.com/photo-1615485500704-8e990f9900f7",
+      "https://images.unsplash.com/photo-1615485290398-1f9c2fe2c70e",
     ],
-    shortDescription: "Fresh and crispy green peppers",
-    description: `Our green peppers are grown in controlled environments for optimal quality. Features include:
+    shortDescription: "Premium organic turmeric powder",
+    description: `Our organic turmeric powder is produced from the finest turmeric roots, carefully processed to maintain its natural properties. Features include:
 
-• Crisp texture
-• Vibrant color
-• Fresh aroma
-• Perfect for cooking
+• High curcumin content (3.5%)
+• Rich golden color
+• Strong aroma
+• Fine powder consistency
 
-Each pepper is carefully selected for size and quality. We maintain strict temperature control during transportation.`,
+Each batch is tested for quality and purity. Our turmeric is grown in certified organic farms and processed in state-of-the-art facilities to ensure the highest quality standards.
+
+Perfect for both culinary and therapeutic uses, our turmeric powder is known for its:
+• Intense flavor
+• Natural color
+• Health benefits
+• Versatility in cooking`,
     specifications: [
-      { label: "Origin", value: "Local Farms, USA" },
-      { label: "Season", value: "Year-round" },
-      { label: "Storage", value: "7-10°C" },
-      { label: "Packaging", value: "3kg, 6kg boxes" }
+      { label: "Origin", value: "Kerala, India" },
+      { label: "Curcumin Content", value: "3.5%" },
+      { label: "Process", value: "Stone Ground" },
+      { label: "Packaging", value: "100g, 500g, 1kg packs" }
     ]
   },
   {
-    id: 5,
-    name: "Fresh Oranges",
-    mainImage: "https://images.unsplash.com/photo-1547514701-42782101795e",
+    id: "FP003",
+    name: "Premium Basmati Rice",
+    category: "Rice",
+    categoryId: 3,
+    mainImage: "https://images.unsplash.com/photo-1586201375761-83865001e31c",
     images: [
-      "https://images.unsplash.com/photo-1547514701-42782101795e",
-      "https://images.unsplash.com/photo-1582979512210-99b6a53386f9",
+      "https://images.unsplash.com/photo-1586201375761-83865001e31c",
+      "https://images.unsplash.com/photo-1550459716-8c75f92e8d73",
     ],
-    shortDescription: "Juicy and sweet oranges",
-    description: `Our premium oranges are sourced from select groves. These oranges offer:
+    shortDescription: "Aged premium basmati rice",
+    description: `Our premium basmati rice is aged for 2 years to develop its distinctive characteristics:
 
-• Sweet and tangy flavor
-• High juice content
-• Rich in Vitamin C
-• Perfect eating quality
+• Extra-long grains
+• Superior aroma
+• Non-sticky texture
+• Perfect elongation after cooking
 
-Each orange is carefully harvested at peak ripeness. We use specialized packaging to maintain freshness during transit.`,
+Each grain is carefully selected and processed to maintain its quality. Our basmati rice undergoes rigorous quality checks to ensure:
+
+• Uniform grain size
+• No broken grains
+• Pure white color
+• Free from impurities
+
+Ideal for biryanis, pulao, and other traditional dishes, our basmati rice is exported to premium markets worldwide.`,
     specifications: [
-      { label: "Origin", value: "Florida, USA" },
-      { label: "Season", value: "November to March" },
-      { label: "Storage", value: "8-10°C" },
-      { label: "Packaging", value: "5kg, 10kg boxes" }
+      { label: "Origin", value: "Punjab, India" },
+      { label: "Aging", value: "2 Years" },
+      { label: "Length", value: "8.4mm" },
+      { label: "Packaging", value: "1kg, 5kg, 25kg bags" }
     ]
   }
 ];

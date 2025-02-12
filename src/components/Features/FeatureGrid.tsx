@@ -15,6 +15,7 @@ export default function FeatureGrid({ className = '' }: FeatureGridProps) {
           icon={card.icon}
           title={card.title}
           description={card.description}
+          index={index}
         />
       ))}
     </div>
